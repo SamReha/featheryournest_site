@@ -1,420 +1,378 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Feather Your Nest Staging</title>
-<link href="css/config.css" rel="stylesheet" type="text/css" />
-<script type='text/javascript' src="js/jquery.min.js"></script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Feather Your Nest Staging</title>
+    <link href="css/config.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src="js/jquery.min.js"></script>
 
-<!--[if lt IE 9]>
-	<script src="/js/html5shiv.js"></script>
-	<![endif]-->
-	<script src="js/modernizr.js"></script>
-
-	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-
+    <!--[if lt IE 9]>
+      <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" language="javascript">
-function GetDateTime()
-{
+      function GetDateTime() {
+        var weekdays = new Array(7);
+        weekdays[0] = "Sunday";
+        weekdays[1] = "Monday";
+        weekdays[2] = "Tuesday";
+        weekdays[3] = "Wednesday";
+        weekdays[4] = "Thursday";
+        weekdays[5] = "Friday";
+        weekdays[6] = "Saturday";
 
-var weekdays = new Array(7);
-weekdays[0] = "Sunday";
-weekdays[1] = "Monday";
-weekdays[2] = "Tuesday";
-weekdays[3] = "Wednesday";
-weekdays[4] = "Thursday";
-weekdays[5] = "Friday";
-weekdays[6] = "Saturday";
+        var current_date = new Date();
 
-var current_date = new Date();
+        weekday_value = current_date.getDay();
 
-weekday_value = current_date.getDay();
+        var month = new Array(12);
+        month[0] = "January";
+        month[1] = "February";
+        month[2] = "March";
+        month[3] = "April";
+        month[4] = "May";
+        month[5] = "June";
+        month[6] = "July";
+        month[7] = "August";
+        month[8] = "September";
+        month[9] = "October";
+        month[10] = "November";
+        month[11] = "December";
 
-var month = new Array(12);
-month[0] = "January";
-month[1] = "February";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
+        var current_month = new Date();
 
-var current_month = new Date();
+        month_value = current_month.getMonth();
 
-month_value = current_month.getMonth();
+        var param1 = new Date();
+        var param2 = weekdays[weekday_value] + '  ' + param1.getDate() + ' ' + month[month_value] + ' ' + param1.getFullYear();
+        document.getElementById('lbltxt').innerHTML = param2;
+      }
+    </script>
+  </head>
 
-var param1 = new Date();
-var param2 = weekdays[weekday_value] + '  ' + param1.getDate() + ' ' + month[month_value] + ' ' + param1.getFullYear();
-document.getElementById('lbltxt').innerHTML = param2;
-}
-</script>
-
-
-</head>
-
-<body onLoad="GetDateTime()">
-
-		<div id="wrap">
-        	<div id="home">
-            	<!--************************* Begin Header ****************************-->
-                	<header id="header">
-                    	<div class="time">
-                        	<div class="container">
-                        		<form id="forms" runat="server">
-                                <div>
-                                	<label id="lbltxt"/>
-                                </div>
-                                </form>
-                            </div>
-                        </div>
-                    	<div class="container">
-                        <h1 class="logo">
-                        	<a href="index.html"><img src="images_feather/logo.png" alt="Feather Your Nest"></a>
-                        </h1>
-
-                        <figure class="social_media">
-                      		<a href="https://www.facebook.com/featheryourneststaging/"><img src="images_feather/social_media/facebook.png" alt="Facebook"></a>
-                          <a href="https://twitter.com/ginalinncarroll"><img src="images_feather/social_media/twitter.png" alt="Twitter"></a>
-                          <a href="https://plus.google.com/102372814145874650118/about"><img src="images_feather/social_media/gplus.png" alt="Google Plus"></a>
-                          <a href="https://www.linkedin.com/pub/gina-carroll/15/879/961"><img src="images_feather/social_media/linkedin.png" alt="Linked In"></a>
-                          <a href="https://www.pinterest.com/ginadecorator/"><img src="images_feather/social_media/pinterest.png" alt="Pinterest"></a>
-                          <a href="mailto:featheryournest1@mac.com"><img src="images_feather/social_media/mail.png" alt="Mail"></a>
-                        </figure>
-                        <div class="menu-button">Menu</div>
-                        	<nav id="nav_bg">
-                            	<div>
-                                <ul data-breakpoint="800" class="flexnav">
-                                    <li class="menu_rh"><a href="index.html">home</a></li>
-                                    <li><a href="about_us.html">about</a></li>
-                                    <li><a href="#">services</a>
-                                    	<ul>
-                                        	<li><a href="services/interior_redesign.html">vacant home staging</a></li>
-                                            <li><a href="services/home_staging.html">occupied home staging</a></li>
-                                            <li><a href="services/color_consultation.html">staging consultation</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a href="gallery.html">gallery</a></li>
-
-                                    <li><a href="contact_us.html">contact</a></li>
-                              </ul>
-                              </div>
-              				</nav>
-
-
-                        </div>
-       		  		</header>
-                    <div class="clear"></div>
-                <!--************************* End Header ****************************-->
-                <!--************************* Begin Content ****************************-->
-                	<section id="content">
-                    	<div class="container margin_bottom">
-                        	<div class="banner">
-                            	<div class="padd">
-
-                                			<figure class="banner_img">
-                                            	<div class="flexslider">
-          											<ul class="slides">
-                                                      <li><img src="images_feather/banner/banner_2.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_3.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_4.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_5.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_6.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_7.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_8.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_9.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_10.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_11.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_12.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_13.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_14.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_15.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_16.jpg" alt="Banner"></li>
-                                                      <li><img src="images_feather/banner/banner_17.jpg" alt="Banner"></li>
-                                                  </ul>
-                                                </div>
-                                            </figure>
-
-                                			<aside class="client_review">
-                                                <h2>client reviews</h2>
-
-                                                <p>"Feather Your Nest Staging can turn an ordinary listing into a showcase property. Gina's team is amazing!"</p>
-
-                                                <p><strong class="color_cyan">Dale Warfel, Realtor</strong></p>
-
-                                                <p>"I trust them with all my stagings. Feather Your Nest is the best."</p>
-
-                                                <p><strong class="color_cyan">Cathy Jackson, Realtor</strong></p>
-
-                                  </aside>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="container clear">
-                        	<article class="left_content">
-                            	<div class="padd bg">
-                                	<h2><strong>Feather Your Nest Staging</strong> <span></span></h2>
-
-                                    <figure class="img_left">
-                                    	<img src="images_feather/danube_MBR.JPG">
-                                    </figure>
-
-                                    <p><strong class="color_cyan">Feather Your Nest</strong> supplies a complete range of real estate staging services, from staging consultations, occupied home stagings, and vacant home stagings. We provide all the furniture, art, accessories, lighting, linens, and other essential items to turn your listing into a showcase property.</p>
-
-                                    <p>We offer the following staging services:</p>
-
-<p><strong>Vacant Home</strong> - Our expert team will evaluate your property, then design and install furniture, art, lighting, and accessories to fit the style of the home.  We have a warehouse full of elegant furnishings to complement the property, even including the small but important details like the right shower curtain and welcome mat.</p>
-
-<p><strong>Occupied Home</strong> - This is designed for sellers who will continue to live in the home while it is on the market.  We can help evaluate what to keep and what to pre-pack and make recommendations on paint, carpeting, and other finishes if updating is needed.  We are able to edit what you have and bring in staging inventory as needed to complete the look.</p>
-
-<p><strong>Staging Consultation</strong> - Before going on the market, a Staging Consultation provides valuable feedback on how to best showcase the home’s potential.  This is critical information for the seller and the realtor.  The consultation includes a walk-through of the home and a detailed list of recommendations to showcase the home’s assets.</p>
-
-                                    <hr class="clear">
-
-                                    <p class="color_brown center_align"><strong>The change was amazing. I love my new home!"</strong><br>
-												<strong class="color_cyan">-Bonnie W., Campbell</strong></p>
-
-                                </div>
-                            </article>
-
-                            <aside class="right_content">
-
-                                <div class="contact">
-                                	<div class="padd bg">
-                                	<h2><strong>contact us</strong> <span></span></h2>
-
-
-                                    <h4 class="color_green" style="font-family:Arial, Helvetica, sans-serif;">GINA CARROLL</h4>
-
-                                    <p class="color_brown">San Jose, California<br>
-                                    408<strong style="color:#007477;">&bull;</strong>705<strong style="color:#007477;">&bull;</strong>7645<br>
-                                    <a href="mailto:featheryournest1@mac.com"><strong class="color_orange">featheryournest1@mac.com</strong></a>
-                                    </p>
-                                    </div>
-                                </div>
-
-                                <div class="our_philosophy">
-                                	<div class="padd">
-                                	<h3>Benefits of Staging</h3>
-
-                                	<figure class="center_align gina_carroll">
-                                    	<img src="images_feather/gina_carroll.jpg" alt="Gina Carroll">
-                                    </figure>
-
-                                    <p style="text-align:justify;">Staged homes sell faster and for higher prices.  The cost of staging can be recovered many times over in the final sales price.  Staging fees are part of the cost of selling a home, and may be tax-deductible.  Consult your tax advisor.  Call to schedule a consultation. </p>
-                                </div>
-                                </div>
-                            </aside>
-                        </div>
-       		  		</section>
-                <!--************************* End Content ****************************-->
-                <!--************************* Begin Footer ****************************-->
-                	<footer id="footer">
-
-                        <div class="bottom_bg">
-                        	<div class="container">
-                            	<p class="left">Copyright &copy; Feather Your Nest Staging. All Rights Reserved.</p>
-
-                                <p class="right">Powered by <a href="http://www.localbiznetwork.com" target="_blank">LocalBizNetwork</a></p>
-                            </div>
-                        </div>
-              </footer>
-             <a href="#" class="back-to-top"></a>
-              <!--************************* End Footer ****************************-->
+  <body onLoad="GetDateTime()">
+    <div id="wrap">
+      <div id="home">
+        <!--************************* Begin Header ****************************-->
+        <header id="header">
+          <div class="time">
+            <div class="container">
+              <form id="forms" runat="server">
+                <div>
+                  <label id="lbltxt"/>
+                </div>
+              </form>
             </div>
-        </div>
+          </div>
+          <div class="container">
+            <h1 class="logo">
+              <a href="index.html"><img src="images_feather/logo.png" alt="Feather Your Nest"></a>
+            </h1>
 
-        <script>
-			jQuery(document).ready(function() {
-				var offset = 220;
-				var duration = 500;
-				jQuery(window).scroll(function() {
-					if (jQuery(this).scrollTop() > offset) {
-						jQuery('.back-to-top').fadeIn(duration);
-					} else {
-						jQuery('.back-to-top').fadeOut(duration);
-					}
-				});
+            <figure class="social_media">
+              <a href="https://www.facebook.com/featheryourneststaging/"><img src="images_feather/social_media/facebook.png" alt="Facebook"></a>
+              <a href="https://twitter.com/ginalinncarroll"><img src="images_feather/social_media/twitter.png" alt="Twitter"></a>
+              <a href="https://plus.google.com/102372814145874650118/about"><img src="images_feather/social_media/gplus.png" alt="Google Plus"></a>
+              <a href="https://www.linkedin.com/pub/gina-carroll/15/879/961"><img src="images_feather/social_media/linkedin.png" alt="Linked In"></a>
+              <a href="https://www.pinterest.com/ginadecorator/"><img src="images_feather/social_media/pinterest.png" alt="Pinterest"></a>
+              <a href="mailto:featheryournest1@mac.com"><img src="images_feather/social_media/mail.png" alt="Mail"></a>
+            </figure>
 
-				jQuery('.back-to-top').click(function(event) {
-					event.preventDefault();
-					jQuery('html, body').animate({scrollTop: 0}, duration);
-					return false;
-				})
-			});
-		</script>
+            <div class="menu-button">Menu</div>
+            <nav id="nav_bg">
+              <div>
+                <ul data-breakpoint="800" class="flexnav">
+                  <li class="menu_rh"><a href="index.html">home</a></li>
+                  <li><a href="about_us.html">about</a></li>
+                  <li><a href="#">services</a>
+                    <ul>
+                      <li><a href="services/interior_redesign.html">vacant home staging</a></li>
+                      <li><a href="services/home_staging.html">occupied home staging</a></li>
+                      <li><a href="services/color_consultation.html">staging consultation</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="gallery.html">gallery</a></li>
+                  <li><a href="contact_us.html">contact</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="clear"></div>
+        <!--************************* End Header ****************************-->
 
-        <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.touchSwipe.min.js"></script>
-  <script src="js/jquery.liquid-slider.js"></script>
-  <script>
-    $('#main-slider').liquidSlider();
+        <!--************************* Begin Content ****************************-->
+        <section id="content">
+          <div class="container margin_bottom">
+            <div class="banner">
+              <div class="padd">
+                <figure class="banner_img">
+                  <div class="flexslider">
+                    <ul class="slides">
+                      <li><img src="images_feather/banner/banner_2.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_3.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_4.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_5.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_6.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_7.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_8.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_9.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_10.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_11.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_12.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_13.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_14.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_15.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_16.jpg" alt="Banner"></li>
+                      <li><img src="images_feather/banner/banner_17.jpg" alt="Banner"></li>
+                    </ul>
+                  </div>
+                </figure>
 
-    /* If you need to access the internal property or methods, use this:
-    var api = $.data( $('#slider-id')[0], 'liquidSlider');
-    */
-  </script>
+                <aside class="client_review">
+                  <h2>client reviews</h2>
 
-  <!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
+                  <p>"Feather Your Nest Staging can turn an ordinary listing into a showcase property. Gina's team is amazing!"</p>
 
-  <script type="text/javascript">
-    $(function(){
-      SyntaxHighlighter.all();
-    });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
+                  <p><strong class="color_cyan">Dale Warfel, Realtor</strong></p>
+
+                  <p>"I trust them with all my stagings. Feather Your Nest is the best."</p>
+
+                  <p><strong class="color_cyan">Cathy Jackson, Realtor</strong></p>
+                </aside>
+              </div>
+            </div>
+          </div>
+
+          <div class="container clear">
+            <article class="left_content">
+              <div class="padd bg">
+                <h2><strong>Feather Your Nest Staging</strong> <span></span></h2>
+                  <figure class="img_left">
+                    <img src="images_feather/danube_MBR.JPG">
+                  </figure>
+
+                  <p><strong class="color_cyan">Feather Your Nest</strong> supplies a complete range of real estate staging services, from staging consultations, occupied home stagings, and vacant home stagings. We provide all the furniture, art, accessories, lighting, linens, and other essential items to turn your listing into a showcase property.</p>
+
+                  <p>We offer the following staging services:</p>
+
+                  <p><strong>Vacant Home</strong> - Our expert team will evaluate your property, then design and install furniture, art, lighting, and accessories to fit the style of the home.  We have a warehouse full of elegant furnishings to complement the property, even including the small but important details like the right shower curtain and welcome mat.</p>
+
+                  <p><strong>Occupied Home</strong> - This is designed for sellers who will continue to live in the home while it is on the market.  We can help evaluate what to keep and what to pre-pack and make recommendations on paint, carpeting, and other finishes if updating is needed.  We are able to edit what you have and bring in staging inventory as needed to complete the look.</p>
+
+                  <p><strong>Staging Consultation</strong> - Before going on the market, a Staging Consultation provides valuable feedback on how to best showcase the home’s potential.  This is critical information for the seller and the realtor.  The consultation includes a walk-through of the home and a detailed list of recommendations to showcase the home’s assets.</p>
+
+                  <hr class="clear">
+
+                  <p class="color_brown center_align"><strong>The change was amazing. I love my new home!"</strong><br>
+              <strong class="color_cyan">-Bonnie W., Campbell</strong></p>
+
+              </div>
+            </article>
+
+            <aside class="right_content">
+              <div class="contact">
+                <div class="padd bg">
+                  <h2><strong>contact us</strong> <span></span></h2>
+
+                  <h4 class="color_green" style="font-family:Arial, Helvetica, sans-serif;">GINA CARROLL</h4>
+
+                  <p class="color_brown">
+                    San Jose, California
+                    <br>
+                    408<strong style="color:#007477;">&bull;</strong>705<strong style="color:#007477;">&bull;</strong>7645
+                    <br>
+                    <a href="mailto:featheryournest1@mac.com"><strong class="color_orange">featheryournest1@mac.com</strong></a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="our_philosophy">
+                <div class="padd">
+                  <h3>Benefits of Staging</h3>
+                  <figure class="center_align gina_carroll">
+                    <img src="images_feather/gina_carroll.jpg" alt="Gina Carroll">
+                  </figure>
+
+                  <p style="text-align:justify;">Staged homes sell faster and for higher prices.  The cost of staging can be recovered many times over in the final sales price.  Staging fees are part of the cost of selling a home, and may be tax-deductible.  Consult your tax advisor.  Call to schedule a consultation. </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+        <!--************************* End Content ****************************-->
+
+        <!--************************* Begin Footer ****************************-->
+        <footer id="footer">
+          <div class="bottom_bg">
+            <div class="container">
+              <p class="left">Copyright &copy; Feather Your Nest Staging. All Rights Reserved.</p>
+              <p class="right">Powered by <a href="http://www.localbiznetwork.com" target="_blank">LocalBizNetwork</a></p>
+            </div>
+          </div>
+        </footer>
+        <a href="#" class="back-to-top"></a>
+        <!--************************* End Footer ****************************-->
+      </div>
+    </div>
+
+    <script>
+      jQuery(document).ready(function() {
+        var offset = 220;
+        var duration = 500;
+
+        jQuery(window).scroll(function() {
+          if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+          } else {
+           jQuery('.back-to-top').fadeOut(duration);
+          }
+        });
+
+        jQuery('.back-to-top').click(function(event) {
+          event.preventDefault();
+          jQuery('html, body').animate({scrollTop: 0}, duration);
+          return false;
+        })
       });
-    });
-  </script>
+    </script>
 
-        <script type="text/javascript">
-                                jQuery(function($) {
-                                    $('#searchbox input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;amp;type=json&amp;amp;ordering=&amp;amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
-                                });
-                                </script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/jquery.liquid-slider.js"></script>
+    <script>
+      $('#main-slider').liquidSlider();
+
+      /* If you need to access the internal property or methods, use this:
+      var api = $.data( $('#slider-id')[0], 'liquidSlider');
+      */
+    </script>
+
+    <!-- FlexSlider -->
+    <script defer src="js/jquery.flexslider.js"></script>
 
     <script type="text/javascript">
-      //$.noConflict();
+      $(function(){
+        SyntaxHighlighter.all();
+      });
+      $(window).load(function(){
+        $('.flexslider').flexslider({
+          animation: "slide",
+          start: function(slider){
+            $('body').removeClass('loading');
+          }
+        });
+      });
     </script>
+
+    <script type="text/javascript">
+      jQuery(function($) {
+        $('#searchbox input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;amp;type=json&amp;amp;ordering=&amp;amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
+      });
+    </script>
+
+    <script type="text/javascript">
+    //$.noConflict();
+    </script>
+
     <script src="js/jquery.flexnav.js" type="text/javascript"></script>
     <script type="text/javascript">
-
-		$(".flexnav").flexNav();
+      $(".flexnav").flexNav();
     </script>
+  </body>
+  <script language="javascript" type="text/javascript">
+    function hide() {
+      document.getElementById("showResult").innerHTML="";
+    }
 
-</body>
-<script language="javascript" type="text/javascript">
+    function Index() {
+      document.getElementById("showResult").innerHTML="";
+      document.getElementById("showMsg").innerHTML="<h4>Sign up for our email newsletter today!</h4><label>first name:</label><input type='text' name='name'><label>email:</label><input type='text' name='email'><input type='submit' name='submit' value='Subscribe'>";
+      //document.getElementById("showResult").innerHTML="";
 
+      //document.form1.action="index.html";
+      //document.form1.submit();
+    }
 
-function hide()
-{
-document.getElementById("showResult").innerHTML="";
-}
+    function closeWin() {
+      var n=document.form1.hname.value;
+      var e=document.form1.hemail.value;
 
-function Index()
-{
-	document.getElementById("showResult").innerHTML="";
-	document.getElementById("showMsg").innerHTML="<h4>Sign up for our email newsletter today!</h4><label>first name:</label><input type='text' name='name'><label>email:</label><input type='text' name='email'><input type='submit' name='submit' value='Subscribe'>";
-	//document.getElementById("showResult").innerHTML="";
-	/*
-	document.form1.action="index.html";
-	document.form1.submit();*/
-}
-function closeWin()
-{
-	var n=document.form1.hname.value;
-	var e=document.form1.hemail.value;
+      document.getElementById("showMsg").innerHTML="<h4>Sign up for our email newsletter today!</h4><label>first name:</label><input type='text' name='name' value="+n+"><label>email:</label><input type='text' name='email' value="+e+"><input type='submit' name='submit' value='Subscribe'>";
+      // document.getElementById("showResult").innerHTML="";
+      document.form1.name.value=n;
+      document.form1.email.value=e;
+    }
 
+    function nextWin() {
+      var name = document.form1.name.value;
+      var email = document.form1.email.value;
+      document.form1.hname.value = name;
+      document.form1.hemail.value = email;
 
-    document.getElementById("showMsg").innerHTML="<h4>Sign up for our email newsletter today!</h4><label>first name:</label><input type='text' name='name' value="+n+"><label>email:</label><input type='text' name='email' value="+e+"><input type='submit' name='submit' value='Subscribe'>";
-		//document.getElementById("showResult").innerHTML="";
-	document.form1.name.value=n;
-	document.form1.email.value=e;
-
-}
-
-function nextWin()
-{
-
-
-	var name=document.form1.name.value;
-	var email=document.form1.email.value;
-	document.form1.hname.value=name;
-	document.form1.hemail.value=email;
-	//alert(contact);
-	if((name==""))
-	{
-		alert("Please enter your name");
-		document.form1.name.focus();
-		return false;
-	}
-
-	if((email==""))
-	{
-		alert("Please enter your email id");
-		document.form1.email.focus();
-		return false;
-	}
-	var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-	if(email.match(emailRegEx)){
-	}else{
-	alert('Please enter a valid email address');
-	document.form1.email.focus();
-	return false;
-	}
-
-
-	document.getElementById("showMsg").innerHTML="";
-	document.getElementById("showMsg").innerHTML="<h4>Please Check and Confirm your details!</h4><label>"+name+"</label><label>"+email+"</label><input type='button' name='back' value='Back' onclick='closeWin()' />&nbsp;<input type='button' name='next' value='Confirm' onclick='checkForm()' />";
-	return false;
-}
-
-function checkForm()
-{
-	var name=document.form1.hname.value;
-	var email=document.form1.hemail.value;
-	var urr1="n="+name;
-	var urr2="e="+email;
-
-	try
-  	{
-  	xmlhttp=new XMLHttpRequest();
-  	}catch (e)
-  	{
- 	try
-    {
-    xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
-    }catch (e)
-    {
-    try
-      {
-      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      if(name == "") {
+      	alert("Please enter your name");
+      	document.form1.name.focus();
+      	return false;
       }
-    catch (e)
-      {
-      alert("Your browser does not support AJAX!");
+
+      if(email == "") {
+      	alert("Please enter your email id");
+      	document.form1.email.focus();
+      	return false;
+      }
+
+      var emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+      if(!email.match(emailRegEx)){
+        alert('Please enter a valid email address');
+        document.form1.email.focus();
+        return false;
+      }
+
+      document.getElementById("showMsg").innerHTML="";
+      document.getElementById("showMsg").innerHTML="<h4>Please Check and Confirm your details!</h4><label>"+name+"</label><label>"+email+"</label><input type='button' name='back' value='Back' onclick='closeWin()' />&nbsp;<input type='button' name='next' value='Confirm' onclick='checkForm()' />";
       return false;
+    }
+
+    function checkForm() {
+      var name = document.form1.hname.value;
+      var email = document.form1.hemail.value;
+      var urr1 = "n=" + name;
+      var urr2 = "e=" + email;
+
+      try {
+        xmlhttp=new XMLHttpRequest();
+      } catch (e) {
+        try {
+          xmlhttp=new ActiveXObject("Msxml2.XMLHTTP");
+        } catch (e) {
+          try {
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          } catch (e) {
+            alert("Your browser does not support AJAX!");
+            return false;
+          }
+        }
+      }
+
+      xmlhttp.onreadystatechange = processStateChange;
+      xmlhttp.open("GET","fyn_mail.jsp?"+urr1+"&"+urr2, true);
+      xmlhttp.send(null);
+      document.getElementById("showResult").innerHTML="<div align='center'><h4><strong>Processing.<br>Please Wait...</strong></h4></div>";
+      document.getElementById("showMsg").innerHTML="";
+    }
+
+    function processStateChange() {
+      if(xmlhttp.readyState == 4) {
+        if(xmlhttp.status == 200) {
+          //var message = xmlhttp.responseXML.getElementsByTagName("read")[0];
+          document.getElementById("showResult").innerHTML="<div align='center'><h4><strong>Thank you for your interest!<br /><br />You will be included in our mailing list right away.</strong><br><br><input type='button' name='back' value='Show Form' onclick='Index()'></h4></div>";
+          document.getElementById("showMsg").innerHTML="";
+        }
       }
     }
-  }
-
- xmlhttp.onreadystatechange = processStateChange;
-xmlhttp.open("GET","fyn_mail.jsp?"+urr1+"&"+urr2, true);
-xmlhttp.send(null);
-document.getElementById("showResult").innerHTML="<div align='center'><h4><strong>Processing.<br>Please Wait...</strong></h4></div>";
-document.getElementById("showMsg").innerHTML="";
-}
-
-
-function processStateChange()
-{
-
-     if(xmlhttp.readyState == 4)
-       {
-            if(xmlhttp.status == 200)
-            {
-				//var message = xmlhttp.responseXML.getElementsByTagName("read")[0];
-				document.getElementById("showResult").innerHTML="<div align='center'><h4><strong>Thank you for your interest!<br /><br />You will be included in our mailing list right away.</strong><br><br><input type='button' name='back' value='Show Form' onclick='Index()'></h4></div>";
-           		document.getElementById("showMsg").innerHTML="";
-
-           }
-       }
-}
-
-
-</script>
+  </script>
 </html>
