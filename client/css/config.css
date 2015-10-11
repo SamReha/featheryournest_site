@@ -19,15 +19,14 @@
 /* Flexslider styles */
 @import url('flexslider.css');
 
-
 body {
-	background: url(../images_feather/page_bg.jpg) left top scroll repeat;
-	font: 14px/20px Arial, Helvetica, sans-serif, "Trebuchet MS";
-	text-align: left;
-	color: #5C2901;
+  background: url(../images_feather/page_bg.jpg) left top scroll repeat;
+  font: 14px/20px Arial, Helvetica, sans-serif, "Trebuchet MS";
+  text-align: left;
+  color: #5C2901;
 }
 
 #wrap {
-	width: 100%;
-	position: relative;
+  width: 100%;
+  position: relative;
 }

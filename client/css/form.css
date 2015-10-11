@@ -1,200 +1,190 @@
-
-
-
 input, textarea, select {
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-o-border-radius: 6px;
-	padding: 5px 8px;
-	border: 1px solid #999;
-	background: #DDDDDD;
-	-webkit-transition: background .3s ease-in;
-	-moz-transition: background .3s ease-in;
-	-o-transition: background .3s ease-in;
-	transition: background .3s ease-in;
-	font-family: Arial, Helvetica, sans-serif, "Trebuchet MS";
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  padding: 5px 8px;
+  border: 1px solid #999;
+  background: #DDDDDD;
+  -webkit-transition: background .3s ease-in;
+  -moz-transition: background .3s ease-in;
+  -o-transition: background .3s ease-in;
+  transition: background .3s ease-in;
+  font-family: Arial, Helvetica, sans-serif, "Trebuchet MS";
 }
 input:focus, textarea:focus, select:focus {
-	background: #FFF;
+  background: #FFF;
 }
 input[type=text] {
-	width: 90%;
+  width: 90%;
 }
 input[type=submit], input[type=reset], input[type=button] {
-	width: 100px;
-	background: #444444;
-	background-image: -webkit-linear-gradient(top, #444444, #252525);
-	background-image: -moz-linear-gradient(top, #444444, #252525);
-	background-image: -o-linear-gradient(top, #444444, #252525);
-	background-image: linear-gradient(top, #444444, #252525);
-	font-size: 15px;
-	text-align: center;
-	color: #FFF;
-	border: 1px solid #252525;
-	clear: both;
-	padding: 5px 8px;
-	margin: 00px 04px;	
+  width: 100px;
+  background: #444444;
+  background-image: -webkit-linear-gradient(top, #444444, #252525);
+  background-image: -moz-linear-gradient(top, #444444, #252525);
+  background-image: -o-linear-gradient(top, #444444, #252525);
+  background-image: linear-gradient(top, #444444, #252525);
+  font-size: 15px;
+  text-align: center;
+  color: #FFF;
+  border: 1px solid #252525;
+  clear: both;
+  padding: 5px 8px;
+  margin: 00px 04px;
 }
 input:hover[type=submit], input:hover[type=reset], input:hover[type=button] {
-	background: #d5d5d5;
-	background-image: -webkit-linear-gradient(top, #d5d5d5, #bcbcbc);
-	background-image: -moz-linear-gradient(top, #d5d5d5, #bcbcbc);
-	background-image: -o-linear-gradient(top, #d5d5d5, #bcbcbc);
-	background-image: linear-gradient(top, #d5d5d5, #bcbcbc);
-	color: #000;
-	border: 1px solid #bcbcbc;
-	cursor: pointer;
+  background: #d5d5d5;
+  background-image: -webkit-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: -moz-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: -o-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: linear-gradient(top, #d5d5d5, #bcbcbc);
+  color: #000;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
 }
 select {
-	padding: 7px 03px;
-	width: 298px;
+  padding: 7px 03px;
+  width: 298px;
 }
 textarea {
-	width: 90%;
-	height: 80px;
-	font-size: 13px;
+  width: 90%;
+  height: 80px;
+  font-size: 13px;
 }
-/*********************** Newsletter Sign Up **********************/
 
+/*********************** Newsletter Sign Up **********************/
 .newsletter_signup label {
-	text-transform: capitalize;
-	display: block;
-	padding-bottom: 5px;
+  text-transform: capitalize;
+  display: block;
+  padding-bottom: 5px;
 }
 
 .newsletter_signup input[type=text] {
-	margin-bottom: 10px;
-	-webkit-border-radius: 00px;
-	-moz-border-radius: 00px;
-	border-radius: 00px;
-	background: #FFFFFF;
-	padding: 4px 6px;
+  margin-bottom: 10px;
+  -webkit-border-radius: 00px;
+  -moz-border-radius: 00px;
+  border-radius: 00px;
+  background: #FFFFFF;
+  padding: 4px 6px;
 }
 
 .newsletter_signup input[type=submit], .newsletter_signup input[type=button] {
-	width: 90px;
-	background: #d5d5d5;
-	background-image: -webkit-linear-gradient(top, #d5d5d5, #bcbcbc);
-	background-image: -moz-linear-gradient(top, #d5d5d5, #bcbcbc);
-	background-image: -o-linear-gradient(top, #d5d5d5, #bcbcbc);
-	background-image: linear-gradient(top, #d5d5d5, #bcbcbc);
-	font-size: 13px;
-	text-align: center;
-	color: #000;
-	border: 1px solid #bcbcbc;
-	clear: both;
-	padding: 2px 6px;
-	display: inline-block;
-	margin: 00px 03px;	
+  width: 90px;
+  background: #d5d5d5;
+  background-image: -webkit-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: -moz-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: -o-linear-gradient(top, #d5d5d5, #bcbcbc);
+  background-image: linear-gradient(top, #d5d5d5, #bcbcbc);
+  font-size: 13px;
+  text-align: center;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  clear: both;
+  padding: 2px 6px;
+  display: inline-block;
+  margin: 00px 03px;
 }
 
 .newsletter_signup input:hover[type=submit], .newsletter_signup input:hover[type=button] {
-	background: #444444;
-	background-image: -webkit-linear-gradient(top, #444444, #252525);
-	background-image: -moz-linear-gradient(top, #444444, #252525);
-	background-image: -o-linear-gradient(top, #444444, #252525);
-	background-image: linear-gradient(top, #444444, #252525);	
-	color: #FFF;
-	border: 1px solid #252525;
-	cursor: pointer;
+  background: #444444;
+  background-image: -webkit-linear-gradient(top, #444444, #252525);
+  background-image: -moz-linear-gradient(top, #444444, #252525);
+  background-image: -o-linear-gradient(top, #444444, #252525);
+  background-image: linear-gradient(top, #444444, #252525);
+  color: #FFF;
+  border: 1px solid #252525;
+  cursor: pointer;
 }
 
 /******************** Contact Form ************************/
-
 .contact_form {
-	border: 1px solid #5C2901;
-	padding: 20px;
+  border: 1px solid #5C2901;
+  padding: 20px;
 }
 
-	.contact_form ul {
-		padding: 00px;
-	}
-	
-		.contact_form li {
-			padding: 00px 00px 08px 00px;
-			list-style-type: none;
-		}
-		
-		.contact_form li label {
-			color: #009193;
-			font-weight: bold;
-			float: left;
-			width: 25%;
-			line-height: 30px;
-			margin-right: 10px;
-			text-transform: capitalize;
-		}
-		
-		.contact_form li input[type=text], .contact_form li textarea {
-			width: 65%;
-		}
-		
-		.contact_form li input[type=text]:last-of-type {
-			width: 45%;
-		}
-		
-		.contact_form li:last-child {
-			margin-left: 27%;
-		}
-		
-			.contact_form li ul  {
-				width: 75%;
-				margin: -3% 0% 2% 25%;
-				float: left;
-			}
-		
-				.contact_form li ul li {
-					width: 48%;
-					float: left;
-					font-weight: bold;
-				}
-				
-					.contact_form li ul li:last-child {
-						margin-left: 0%;
-					}
-				
-					.contact_form li ul li input[type=checkbox] {
-						width: 25px;
-						display: inline-block;
-						margin-right: 10px;
-					}
-					
-	@media screen and (max-width: 700px) {
-	
-	
-	/******************** Contact Form ************************/
-			
-			.contact_form li label {
-				float: none;
-				width: 100%;
-			}
-			
-			.contact_form li input[type=text], .contact_form li textarea {
-				width: 95%;
-			}
-			
-			.contact_form li:last-child {
-				margin-left: 00%;
-			}
-			
-				.contact_form li ul  {
-					width: 100%;
-					margin: 2% 0% 1% 00%;
-					float: left;
-				}
-	
-	}
-	
-	@media screen and (max-width: 540px) {
-	
-	
-	/******************** Contact Form ************************/
-			
-			.contact_form li ul li {
-					width: 100%;
-					float: none;
-					margin-bottom: 5px;
-				}
-	
-	}
+.contact_form ul {
+  padding: 00px;
+}
+
+.contact_form li {
+  padding: 00px 00px 08px 00px;
+  list-style-type: none;
+}
+
+.contact_form li label {
+  color: #009193;
+  font-weight: bold;
+  float: left;
+  width: 25%;
+  line-height: 30px;
+  margin-right: 10px;
+  text-transform: capitalize;
+}
+
+.contact_form li input[type=text], .contact_form li textarea {
+  width: 65%;
+}
+
+.contact_form li input[type=text]:last-of-type {
+  width: 45%;
+}
+
+.contact_form li:last-child {
+  margin-left: 27%;
+}
+
+.contact_form li ul  {
+  width: 75%;
+  margin: -3% 0% 2% 25%;
+  float: left;
+}
+
+.contact_form li ul li {
+  width: 48%;
+  float: left;
+  font-weight: bold;
+}
+
+.contact_form li ul li:last-child {
+  margin-left: 0%;
+}
+
+.contact_form li ul li input[type=checkbox] {
+  width: 25px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  /******************** Contact Form ************************/
+  .contact_form li label {
+    float: none;
+    width: 100%;
+  }
+
+  .contact_form li input[type=text], .contact_form li textarea {
+    width: 95%;
+  }
+
+  .contact_form li:last-child {
+    margin-left: 00%;
+  }
+
+  .contact_form li ul  {
+    width: 100%;
+    margin: 2% 0% 1% 00%;
+    float: left;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+  /******************** Contact Form ************************/
+  .contact_form li ul li {
+    width: 100%;
+    float: none;
+    margin-bottom: 5px;
+  }
+
+}

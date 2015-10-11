@@ -1,6 +1,5 @@
 /* `XHTML, HTML4, HTML5 Reset
 ----------------------------------------------------------------------------------------------------*/
-
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp {
   border: 0;
   margin: 0;
@@ -14,22 +13,22 @@ body {
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-/*
+  /*
   Override the default (display: inline) for
   browsers that do not recognize HTML5 tags.
 
   IE8 (and lower) requires a shiv:
   http://ejohn.org/blog/html5-shiv
-*/
+  */
   display: block;
 }
 
 b, strong {
-/*
+  /*
   Makes browsers agree.
   IE + Opera = font-weight: bold.
   Gecko + WebKit = font-weight: bolder.
-*/
+  */
   font-weight: bold;
 }
 
@@ -38,17 +37,17 @@ b, strong {
 img {
   font-size: 0;
   vertical-align: middle;
-/*
+  /*
   For IE.
   http://css-tricks.com/ie-fix-bicubic-scaling-for-images
-*/
+  */
   -ms-interpolation-mode: bicubic;
 }
 
 li {
-/*
-  For IE6 + IE7.
-*/
+  /*
+    For IE6 + IE7.
+  */
   display: list-item;
 }
 
@@ -65,45 +64,42 @@ caption {
 }
 
 svg {
-/*
+  /*
   For IE9.
-*/
+  */
   overflow: hidden;
 }
 
 img, fieldset {
-	border: 0;
+  border: 0;
 }
 
 /* set image max width to 100% */
 img {
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /* ie8 */
-	
-	/* Box Sizing */
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+
+  /* Box Sizing */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .emboss{
-    /* Background */
-    background: rgba(0, 0, 0, 0.2);
-     
-    /* Border bottom light */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-     
-    /* Inner top shadow */
-    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
-     
-    /* Round corners */
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;	
-    }
-	
-	
-	
+  /* Background */
+  background: rgba(0, 0, 0, 0.2);
+
+  /* Border bottom light */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  /* Inner top shadow */
+  -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+
+  /* Round corners */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}

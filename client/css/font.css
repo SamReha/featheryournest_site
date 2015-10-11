@@ -1,81 +1,71 @@
-
 @font-face {
-    font-family: 'bebas_neueregular';
-    src: url('../fonts/bebasneue-webfont.eot');
-    src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bebasneue-webfont.woff') format('woff'),
-         url('../fonts/bebasneue-webfont.ttf') format('truetype'),
-         url('../fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
-    font-weight: 900;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'bebasregular';
-    src: url('../fonts/bebas-webfont.eot');
-    src: url('../fonts/bebas-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/bebas-webfont.woff') format('woff'),
-         url('../fonts/bebas-webfont.ttf') format('truetype'),
-         url('../fonts/bebas-webfont.svg#bebasregular') format('svg');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'bebas_neueregular';
+  src: url('../fonts/bebasneue-webfont.eot');
+  src: url('../fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebasneue-webfont.woff') format('woff'),
+  url('../fonts/bebasneue-webfont.ttf') format('truetype'),
+  url('../fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+  font-weight: 900;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'dancing_script_otregular';
-    src: url('../fonts/dancingscript-regular-webfont.eot');
-    src: url('../fonts/dancingscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/dancingscript-regular-webfont.woff') format('woff'),
-         url('../fonts/dancingscript-regular-webfont.ttf') format('truetype'),
-         url('../fonts/dancingscript-regular-webfont.svg#dancing_script_otregular') format('svg');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'bebasregular';
+  src: url('../fonts/bebas-webfont.eot');
+  src: url('../fonts/bebas-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebas-webfont.woff') format('woff'),
+  url('../fonts/bebas-webfont.ttf') format('truetype'),
+  url('../fonts/bebas-webfont.svg#bebasregular') format('svg');
+  font-weight: 900;
+  font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'jellyka_cuttycupcakesregular';
-    src: url('../fonts/jellyka_cuttycupcakes-webfont.eot');
-    src: url('../fonts/jellyka_cuttycupcakes-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/jellyka_cuttycupcakes-webfont.woff') format('woff'),
-         url('../fonts/jellyka_cuttycupcakes-webfont.ttf') format('truetype'),
-         url('../fonts/jellyka_cuttycupcakes-webfont.svg#jellyka_cuttycupcakesregular') format('svg');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'dancing_script_otregular';
+  src: url('../fonts/dancingscript-regular-webfont.eot');
+  src: url('../fonts/dancingscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/dancingscript-regular-webfont.woff') format('woff'),
+  url('../fonts/dancingscript-regular-webfont.ttf') format('truetype'),
+  url('../fonts/dancingscript-regular-webfont.svg#dancing_script_otregular') format('svg');
+  font-weight: 900;
+  font-style: normal;
 
 }
 
-
-
-
 @font-face {
-    font-family: 'luna_barregular';
-    src: url('../fonts/lunabar-webfont.eot');
-    src: url('../fonts/lunabar-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/lunabar-webfont.woff') format('woff'),
-         url('../fonts/lunabar-webfont.ttf') format('truetype'),
-         url('../fonts/lunabar-webfont.svg#luna_barregular') format('svg');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'jellyka_cuttycupcakesregular';
+  src: url('../fonts/jellyka_cuttycupcakes-webfont.eot');
+  src: url('../fonts/jellyka_cuttycupcakes-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/jellyka_cuttycupcakes-webfont.woff') format('woff'),
+  url('../fonts/jellyka_cuttycupcakes-webfont.ttf') format('truetype'),
+  url('../fonts/jellyka_cuttycupcakes-webfont.svg#jellyka_cuttycupcakesregular') format('svg');
+  font-weight: 900;
+  font-style: normal;
 
 }
 
+@font-face {
+  font-family: 'luna_barregular';
+  src: url('../fonts/lunabar-webfont.eot');
+  src: url('../fonts/lunabar-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/lunabar-webfont.woff') format('woff'),
+  url('../fonts/lunabar-webfont.ttf') format('truetype'),
+  url('../fonts/lunabar-webfont.svg#luna_barregular') format('svg');
+  font-weight: 900;
+  font-style: normal;
 
-
+}
 
 @font-face {
-    font-family: 'mathilderegular';
-    src: url('../fonts/mathilde-webfont.eot');
-    src: url('../fonts/mathilde-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/mathilde-webfont.woff') format('woff'),
-         url('../fonts/mathilde-webfont.ttf') format('truetype'),
-         url('../fonts/mathilde-webfont.svg#mathilderegular') format('svg');
-    font-weight: 900;
-    font-style: normal;
+  font-family: 'mathilderegular';
+  src: url('../fonts/mathilde-webfont.eot');
+  src: url('../fonts/mathilde-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/mathilde-webfont.woff') format('woff'),
+  url('../fonts/mathilde-webfont.ttf') format('truetype'),
+  url('../fonts/mathilde-webfont.svg#mathilderegular') format('svg');
+  font-weight: 900;
+  font-style: normal;
 
 }
