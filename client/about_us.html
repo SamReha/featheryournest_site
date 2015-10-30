@@ -6,51 +6,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Feather Your Nest Staging</title>
     <link href="css/config.css" rel="stylesheet" type="text/css" />
-    <script type='text/javascript' src="js/jquery.min.js"></script>
-
-    <!--[if lt IE 9]>
-      <script src="/js/html5shiv.js"></script>
-    <![endif]-->
-    <script src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" language="javascript">
-      function GetDateTime() {
-        var weekdays = new Array(7);
-        weekdays[0] = "Sunday";
-        weekdays[1] = "Monday";
-        weekdays[2] = "Tuesday";
-        weekdays[3] = "Wednesday";
-        weekdays[4] = "Thursday";
-        weekdays[5] = "Friday";
-        weekdays[6] = "Saturday";
-
-        var current_date = new Date();
-
-        weekday_value = current_date.getDay();
-
-        var month = new Array(12);
-        month[0] = "January";
-        month[1] = "February";
-        month[2] = "March";
-        month[3] = "April";
-        month[4] = "May";
-        month[5] = "June";
-        month[6] = "July";
-        month[7] = "August";
-        month[8] = "September";
-        month[9] = "October";
-        month[10] = "November";
-        month[11] = "December";
-
-        var current_month = new Date();
-
-        month_value = current_month.getMonth();
-
-        var param1 = new Date();
-        var param2 = weekdays[weekday_value] + '  ' + param1.getDate() + ' ' + month[month_value] + ' ' + param1.getFullYear();
-        document.getElementById('lbltxt').innerHTML = param2;
-      }
-    </script>
   </head>
 
   <body onLoad="GetDateTime()">
@@ -108,7 +63,6 @@
         <!--************************* Begin Content ****************************-->
         <section id="content">
           <div class="container clear">
-            <h2>about us</h2>
             <article class="left_content">
               <div class="padd bg">
                 <h2><strong>about us</strong> <span></span></h2>
@@ -161,7 +115,7 @@
 
                   <p style="text-align:justify;">Staged homes sell faster and for higher prices.  The cost of staging can be recovered many times over in the final sales price.  Staging fees are part of the cost of selling a home, and may be tax-deductible.  Consult your tax advisor.  Call to schedule a consultation.</p>
                 </div>
-              </div>  
+              </div>
             </aside>
           </div>
         </section>
@@ -180,36 +134,11 @@
         <!--************************* End Footer ****************************-->
       </div>
     </div>
-
-    <script>
-      jQuery(document).ready(function() {
-        var offset = 220;
-        var duration = 500;
-        jQuery(window).scroll(function() {
-          if (jQuery(this).scrollTop() > offset) {
-            jQuery('.back-to-top').fadeIn(duration);
-          } else {
-            jQuery('.back-to-top').fadeOut(duration);
-          }
-        });
-
-        jQuery('.back-to-top').click(function(event) {
-          event.preventDefault();
-          jQuery('html, body').animate({scrollTop: 0}, duration);
-          return false;
-        })
-      });
-    </script>
-
-    <script type="text/javascript">
-      jQuery(function($) {
-        $('#searchbox input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;amp;type=json&amp;amp;ordering=&amp;amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
-      });
-    </script>
-
-    <script src="js/jquery.flexnav.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      $(".flexnav").flexNav();
-    </script>
   </body>
+  <script type='text/javascript' src="js/jquery.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+  <script src="js/jquery.flexnav.js" type="text/javascript"></script>
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type='text/javascript' src="js/main.js"></script>
 </html>
