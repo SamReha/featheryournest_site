@@ -1,264 +1,221 @@
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Feather Your Nest Staging</title>
-<link href="../css/config.css" rel="stylesheet" type="text/css" />
-<script type='text/javascript' src="../js/jquery.min.js"></script>
-  
-<!--[if lt IE 9]>
-	<script src="/js/html5shiv.js"></script>
-	<![endif]-->
-	<script src="../js/modernizr.js"></script>
-   
-	<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
-    
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Feather Your Nest Staging</title>
+    <link href="../css/config.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src="../js/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+    <script src="../js/modernizr.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
     <script type="text/javascript" language="javascript">
-function GetDateTime()
-{
+      function GetDateTime()
+      {
 
-var weekdays = new Array(7);
-weekdays[0] = "Sunday";
-weekdays[1] = "Monday";
-weekdays[2] = "Tuesday";
-weekdays[3] = "Wednesday";
-weekdays[4] = "Thursday";
-weekdays[5] = "Friday";
-weekdays[6] = "Saturday";
+      var weekdays = new Array(7);
+      weekdays[0] = "Sunday";
+      weekdays[1] = "Monday";
+      weekdays[2] = "Tuesday";
+      weekdays[3] = "Wednesday";
+      weekdays[4] = "Thursday";
+      weekdays[5] = "Friday";
+      weekdays[6] = "Saturday";
 
-var current_date = new Date();
+      var current_date = new Date();
 
-weekday_value = current_date.getDay();
+      weekday_value = current_date.getDay();
 
-var month = new Array(12);
-month[0] = "January";
-month[1] = "February";
-month[2] = "March";
-month[3] = "April";
-month[4] = "May";
-month[5] = "June";
-month[6] = "July";
-month[7] = "August";
-month[8] = "September";
-month[9] = "October";
-month[10] = "November";
-month[11] = "December";
+      var month = new Array(12);
+      month[0] = "January";
+      month[1] = "February";
+      month[2] = "March";
+      month[3] = "April";
+      month[4] = "May";
+      month[5] = "June";
+      month[6] = "July";
+      month[7] = "August";
+      month[8] = "September";
+      month[9] = "October";
+      month[10] = "November";
+      month[11] = "December";
 
-var current_month = new Date();
+      var current_month = new Date();
 
-month_value = current_month.getMonth();
+      month_value = current_month.getMonth();
 
-var param1 = new Date();
-var param2 = weekdays[weekday_value] + '  ' + param1.getDate() + ' ' + month[month_value] + ' ' + param1.getFullYear();
-document.getElementById('lbltxt').innerHTML = param2;
-}
-</script>
-
-	
-</head>
-
-<body onLoad="GetDateTime()">
-
-		<div id="wrap">
-        	<div id="services">
-        	<div id="interior_redesign">
-            	<!--************************* Begin Header ****************************-->
-                	<header id="header">
-                    	<div class="time">
-                        	<div class="container">
-                        		<form id="form1" runat="server">
-                                <div>
-                                	<label id="lbltxt"/>
-                                </div>
-                                </form>
-                          </div>
-                        </div>
-                    	<div class="container">
-                            
-                            <h1 class="logo">
-                            	<a href="../index.html"><img src="../images_feather/logo.png" alt="Feather Your Nest"></a>
-                            </h1>
-                            
-                             <figure class="social_media">
-                          		<a href="#"><img src="../images_feather/social_media/facebook.png" alt="Facebook"></a>
-                                <a href="#"><img src="../images_feather/social_media/twitter.png" alt="Twitter"></a>
-                                <a href="#"><img src="../images_feather/social_media/gplus.png" alt="Google Plus"></a>
-                                <a href="#"><img src="../images_feather/social_media/linkedin.png" alt="Linked In"></a>
-                                <a href="#"><img src="../images_feather/social_media/pinterest.png" alt="Pinterest"></a>
-                                 <a href="mailto:featheryournest1@mac.com"><img src="../images_feather/social_media/mail.png" alt="Mail"></a>
-                            </figure>
-                            
-                          <div class="menu-button">Menu</div>
-                        	<nav id="nav_bg">  
-                            	<div>                      	
-                                <ul data-breakpoint="800" class="flexnav">
-                                    <li><a href="../index.html">home</a></li>
-                                    <li><a href="../about_us.html">about</a></li>
-                                    <li class="menu_rh"><a href="#">services</a>
-                                    	<ul>
-                                        	<li><a href="interior_redesign.html">vacant home staging</a></li>
-                                            <li><a href="home_staging.html">occupied home staging</a></li>
-                                            <li><a href="color_consultation.html">staging consultation</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li><a href="../gallery.html">gallery</a></li>
-
-                                    <li><a href="../contact_us.html">contact</a></li>
-                              </ul> 
-                              </div>                         
-              				</nav>
-                            
-                                              
-                      </div>
-       		  		</header>
-                    <div class="clear"></div>
-                <!--************************* End Header ****************************-->
-                <!--************************* Begin Content ****************************-->
-                	<section id="content">
-               	  		<div class="container clear">
-                        	<h2>services <em>|</em> Vacant Home Staging</h2>
-                        	<article class="left_content">
-                            	<div class="padd bg">
-                                	<h2><strong>Vacant Home Staging</strong> <span></span></h2>
-                                    
-                                    <!--<p class="first_line"><img src="../images_feather/our_services.png"> <strong>ADD STYLE TO YOUR SPACE</strong></p><hr class="border_orange clear">-->
-                                    
-                                    
-                                    
-                                    <figure class="img_right_about">
-                                    	<img src="../images_feather/vacant_home_staging.jpg" alt="Interior Redesign" width="320">
-                                    </figure>
-                                    
-                                    <p>Vacant homes look cold and impersonal.  Create a welcoming and stylish environment for buyers with staging.  It will show the home to its fullest potential and help buyers visualize living in this home.</p>
-
-</p>Feather Your Nest will provide furniture, art, lighting, and accessories to fit the ambiance and style of the home.</p>  
-
-</p>Each staging is unique.  Our designers create a well-coordinated and contemporary look designed to appeal to today’s buyers.  Our team leaves the staged home completely photo ready.</p>
-
-</p>Costs vary by home.  Call for more information.</p> 	
-                                    
-                                    
-                                    
-                                    
-                                    <!--
-                                    <div class="interior_redesign">
-                                    	<h5 class="color_orange">INTERIOR REDESIGN WORKS TO:</h5>
-                                        
-                                        <h5 class="color_brown">TRANSFORM A SPACE<br>
-                                            DOWNSIZE • MOVE IN • BLEND HOUSEHOLDS<br>
-                                            CUSTOMIZE A RENTAL</h5>
-                                    </div>
-                                    
-                                    <hr class="border_orange">
-                                    
-                                    <h5 class="color_cyan">REDESIGN CONSULTATION:</h5>
-                                    
-                                    <p>Whatever design or redesign requirements you have, we give you the tools to move forward, at a price that makes sense. From design and pre-construction ideas to decorating and de-cluttering solutions, we offer consultations to suit your unique needs.</p>
-                                    
-                                    <p>Review of your furnishings and accessories to determine maximum use of existing items. Space and design needs assessment.</p>
-                                    
-                                    <hr class="color_orange">
-                                    
-                                    <h5 class="color_green">INTERIOR REDESIGN:</h5>
-                                    
-                                    <p>Using what you already own, our dynamic team will transform your rooms to enhance their comfort, beauty and utility – in one day! Costs vary depending on individual room condition.</p>
-                                    
-                                    <hr class="clear">
-                                    
-                                    <p class="color_brown center_align"><strong>&quot;You took so much stress away by making things pretty again&quot;</strong><strong class="color_green"> - Martine S., Palo Alt</strong></p>
-                                    
-                                    -->
-                                    
-                                    
-                                </div>
-                            </article>
-                            
-                            <aside class="right_content">
-                          		<div class="contact">
-                                	<div class="padd bg">
-                                	<h2><strong>contact us</strong> <span></span></h2>
-                                
-                                
-                                    <h4 class="color_green" style="font-family:Arial, Helvetica, sans-serif;">GINA CARROLL</h4>
-                                    
-                                    <p>San Jose, California<br>
-                                    408<strong style="color:#007477;">&bull;</strong>705<strong style="color:#007477;">&bull;</strong>7645<br>
-                                    <a href="mailto:featheryournest1@mac.com"><strong class="color_orange">featheryournest1@mac.com</strong></a>
-                                    </p>
-                                    </div>
-                                </div>
-                                
-                                <div class="our_philosophy">
-                                	<div class="padd">
-                                	<h3>Benefits of Staging</h3>
-                                
-                                	<figure class="center_align gina_carroll">
-                                    	<img src="../images_feather/gina_carroll.jpg" alt="Gina Carroll">
-                                    </figure>
-                                
-                                    <p style="text-align:justify;">Staged homes sell faster and for higher prices.  The cost of staging can be recovered many times over in the final sales price.  Staging fees are part of the cost of selling a home, and may be tax-deductible.  Consult your tax advisor.  Call to schedule a consultation. </p>
-                                </div>
-                                </div>
-                                
-                                </aside>
-                        </div>
-       		  		</section>
-                <!--************************* End Content ****************************-->
-                <!--************************* Begin Footer ****************************-->
-                	<footer id="footer">
-                    	
-                        <div class="bottom_bg">
-                        	<div class="container">
-                            	<p class="left">Copyright &copy; Feather Your Nest Staging. All Rights Reserved.</p>
-                                    
-                                <p class="right">Powered by <a href="http://www.localbiznetwork.com" target="_blank">LocalBizNetwork</a></p>
-                            </div>
-                        </div>
-              </footer>
-             <a href="#" class="back-to-top"></a>
-              <!--************************* End Footer ****************************-->
+      var param1 = new Date();
+      var param2 = weekdays[weekday_value] + '  ' + param1.getDate() + ' ' + month[month_value] + ' ' + param1.getFullYear();
+      document.getElementById('lbltxt').innerHTML = param2;
+      }
+    </script>
+  </head>
+  <body onLoad="GetDateTime()">
+    <div id="wrap">
+      <div id="services">
+        <div id="interior_redesign">
+          <!--************************* Begin Header ****************************-->
+          <header id="header">
+            <div class="time">
+              <div class="container">
+                <form id="form1" runat="server">
+                  <div>
+                    <label id="lbltxt"/>
+                  </div>
+                </form>
+              </div>
             </div>
+            <div class="container">
+              <h1 class="logo">
+                <a href="../index.html"><img src="../images_feather/logo.png" alt="Feather Your Nest"></a>
+              </h1>
+              <figure class="social_media">
+                <a href="#"><img src="../images_feather/social_media/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../images_feather/social_media/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../images_feather/social_media/gplus.png" alt="Google Plus"></a>
+                <a href="#"><img src="../images_feather/social_media/linkedin.png" alt="Linked In"></a>
+                <a href="#"><img src="../images_feather/social_media/pinterest.png" alt="Pinterest"></a>
+                <a href="mailto:featheryournest1@mac.com"><img src="../images_feather/social_media/mail.png" alt="Mail"></a>
+              </figure>
+              <div class="menu-button">Menu</div>
+              <nav id="nav_bg">
+                <div>
+                  <ul data-breakpoint="800" class="flexnav">
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../about_us.html">about</a></li>
+                    <li class="menu_rh">
+                      <a href="#">services</a>
+                      <ul>
+                        <li><a href="interior_redesign.html">vacant home staging</a></li>
+                        <li><a href="home_staging.html">occupied home staging</a></li>
+                        <li><a href="color_consultation.html">staging consultation</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="../gallery.html">gallery</a></li>
+                    <li><a href="../contact_us.html">contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </header>
+          <div class="clear"></div>
+          <!--************************* End Header ****************************-->
+          <!--************************* Begin Content ****************************-->
+          <section id="content">
+            <div class="container clear">
+              <h2>services <em>|</em> Vacant Home Staging</h2>
+              <article class="left_content">
+                <div class="padd bg">
+                  <h2><strong>Vacant Home Staging</strong> <span></span></h2>
+                  <!--<p class="first_line"><img src="../images_feather/our_services.png"> <strong>ADD STYLE TO YOUR SPACE</strong></p><hr class="border_orange clear">-->
+                  <figure class="img_right_about">
+                    <img src="../images_feather/vacant_home_staging.jpg" alt="Interior Redesign" width="320">
+                  </figure>
+                  <p>Vacant homes look cold and impersonal.  Create a welcoming and stylish environment for buyers with staging.  It will show the home to its fullest potential and help buyers visualize living in this home.</p>
+                  </p>Feather Your Nest will provide furniture, art, lighting, and accessories to fit the ambiance and style of the home.</p>
+                  </p>Each staging is unique.  Our designers create a well-coordinated and contemporary look designed to appeal to today’s buyers.  Our team leaves the staged home completely photo ready.</p>
+                  </p>Costs vary by home.  Call for more information.</p>
+                  <!--
+                    <div class="interior_redesign">
+                    	<h5 class="color_orange">INTERIOR REDESIGN WORKS TO:</h5>
+
+                        <h5 class="color_brown">TRANSFORM A SPACE<br>
+                            DOWNSIZE • MOVE IN • BLEND HOUSEHOLDS<br>
+                            CUSTOMIZE A RENTAL</h5>
+                    </div>
+
+                    <hr class="border_orange">
+
+                    <h5 class="color_cyan">REDESIGN CONSULTATION:</h5>
+
+                    <p>Whatever design or redesign requirements you have, we give you the tools to move forward, at a price that makes sense. From design and pre-construction ideas to decorating and de-cluttering solutions, we offer consultations to suit your unique needs.</p>
+
+                    <p>Review of your furnishings and accessories to determine maximum use of existing items. Space and design needs assessment.</p>
+
+                    <hr class="color_orange">
+
+                    <h5 class="color_green">INTERIOR REDESIGN:</h5>
+
+                    <p>Using what you already own, our dynamic team will transform your rooms to enhance their comfort, beauty and utility – in one day! Costs vary depending on individual room condition.</p>
+
+                    <hr class="clear">
+
+                    <p class="color_brown center_align"><strong>&quot;You took so much stress away by making things pretty again&quot;</strong><strong class="color_green"> - Martine S., Palo Alt</strong></p>
+
+                    -->
+                </div>
+              </article>
+              <aside class="right_content">
+                <div class="contact">
+                  <div class="padd bg">
+                    <h2><strong>contact us</strong> <span></span></h2>
+                    <h4 class="color_green" style="font-family:Arial, Helvetica, sans-serif;">GINA CARROLL</h4>
+                    <p>San Jose, California<br>
+                      408<strong style="color:#007477;">&bull;</strong>705<strong style="color:#007477;">&bull;</strong>7645<br>
+                      <a href="mailto:featheryournest1@mac.com"><strong class="color_orange">featheryournest1@mac.com</strong></a>
+                    </p>
+                  </div>
+                </div>
+                <div class="our_philosophy">
+                  <div class="padd">
+                    <h3>Benefits of Staging</h3>
+                    <figure class="center_align gina_carroll">
+                      <img src="../images_feather/gina_carroll.jpg" alt="Gina Carroll">
+                    </figure>
+                    <p style="text-align:justify;">Staged homes sell faster and for higher prices.  The cost of staging can be recovered many times over in the final sales price.  Staging fees are part of the cost of selling a home, and may be tax-deductible.  Consult your tax advisor.  Call to schedule a consultation. </p>
+                  </div>
+                </div>
+              </aside>
+            </div>
+          </section>
+          <!--************************* End Content ****************************-->
+          <!--************************* Begin Footer ****************************-->
+          <footer id="footer">
+            <div class="bottom_bg">
+              <div class="container">
+                <p class="left">Copyright &copy; Feather Your Nest Staging. All Rights Reserved.</p>
+                <p class="right">Powered by <a href="http://www.localbiznetwork.com" target="_blank">LocalBizNetwork</a></p>
+              </div>
+            </div>
+          </footer>
+          <a href="#" class="back-to-top"></a>
+          <!--************************* End Footer ****************************-->
         </div>
-        </div>
-        
-        <script>            
-			jQuery(document).ready(function() {
-				var offset = 220;
-				var duration = 500;
-				jQuery(window).scroll(function() {
-					if (jQuery(this).scrollTop() > offset) {
-						jQuery('.back-to-top').fadeIn(duration);
-					} else {
-						jQuery('.back-to-top').fadeOut(duration);
-					}
-				});
-				
-				jQuery('.back-to-top').click(function(event) {
-					event.preventDefault();
-					jQuery('html, body').animate({scrollTop: 0}, duration);
-					return false;
-				})
-			});
-		</script>
-        
-        <script type="text/javascript">
-                                jQuery(function($) {
-                                    $('#searchbox input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;amp;type=json&amp;amp;ordering=&amp;amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
-                                });
-                                </script>
-        
+      </div>
+    </div>
+    <script>
+      jQuery(document).ready(function() {
+      	var offset = 220;
+      	var duration = 500;
+      	jQuery(window).scroll(function() {
+      		if (jQuery(this).scrollTop() > offset) {
+      			jQuery('.back-to-top').fadeIn(duration);
+      		} else {
+      			jQuery('.back-to-top').fadeOut(duration);
+      		}
+      	});
+
+      	jQuery('.back-to-top').click(function(event) {
+      		event.preventDefault();
+      		jQuery('html, body').animate({scrollTop: 0}, duration);
+      		return false;
+      	})
+      });
+    </script>
+    <script type="text/javascript">
+      jQuery(function($) {
+          $('#searchbox input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;amp;type=json&amp;amp;ordering=&amp;amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
+      });
+    </script>
     <script type="text/javascript">
       //$.noConflict();
     </script>
     <script src="../js/jquery.flexnav.js" type="text/javascript"></script>
     <script type="text/javascript">
-		
-		$(".flexnav").flexNav();
+      $(".flexnav").flexNav();
     </script>
-
-</body>
+  </body>
 </html>
