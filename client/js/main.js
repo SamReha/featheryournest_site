@@ -22,13 +22,17 @@ $(window).load(function() {
   $('.flexslider').flexslider({
     animation: 'slide',
     start: function(slider){
-      $('body').removeClass('loading');
+      $('body').removeClass('loading')
     }
-  });
+  })
 });
 
 // Used for navbar
 $('.flexnav').flexNav();
+
+function loadHead() {
+  $("#head").load("components/head.html")
+}
 
 function GetDateTime() {
   var weekdays = [
