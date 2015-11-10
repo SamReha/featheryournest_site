@@ -1,5 +1,7 @@
 'use strict'
 jQuery(document).ready(function() {
+  loadHead()
+  loadHeader()
   var offset = 220;
   var duration = 500;
 
@@ -27,44 +29,12 @@ $(window).load(function() {
   })
 });
 
-// Used for navbar
-$('.flexnav').flexNav();
-
 function loadHead() {
-  $("#head").load("components/head.html")
+  $('#head').load('/components/head.html')
 }
 
-function GetDateTime() {
-  var weekdays = [
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday'
-  ]
-  var month = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-  ]
-
-  var current_date = new Date()
-  var weekday_value = current_date.getDay()
-  var month_value = current_date.getMonth()
-
-  var dateString = weekdays[weekday_value] + '  ' + current_date.getDate() + ' ' + month[month_value] + ' ' + current_date.getFullYear()
-  document.getElementById('lbltxt').innerHTML = dateString
+function loadHeader() {
+  $('#header').load('/components/header.html')
 }
 
 /* REALLY not sure what all this is for. Apparently some JS form that doesn't exist anymore?
