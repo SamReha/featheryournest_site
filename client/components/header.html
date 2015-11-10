@@ -1,0 +1,80 @@
+<div class="time">
+  <div class="container">
+    <form id="forms" runat="server">
+      <div>
+        <label id="lbltxt"/>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <h1 class="logo">
+    <a href="index.html"><img src="/images_feather/logo.png" alt="Feather Your Nest"></a>
+  </h1>
+
+  <figure class="social_media">
+    <a href="https://www.facebook.com/featheryourneststaging/"><img src="/images_feather/social_media/facebook.png" alt="Facebook"></a>
+    <a href="https://twitter.com/ginalinncarroll"><img src="/images_feather/social_media/twitter.png" alt="Twitter"></a>
+    <a href="https://plus.google.com/102372814145874650118/about"><img src="/images_feather/social_media/gplus.png" alt="Google Plus"></a>
+    <a href="https://www.linkedin.com/pub/gina-carroll/15/879/961"><img src="/images_feather/social_media/linkedin.png" alt="Linked In"></a>
+    <a href="https://www.pinterest.com/ginadecorator/"><img src="/images_feather/social_media/pinterest.png" alt="Pinterest"></a>
+    <a href="mailto:featheryournest1@mac.com"><img src="/images_feather/social_media/mail.png" alt="Mail"></a>
+  </figure>
+
+  <div class="menu-button">Menu</div>
+  <nav id="nav_bg">
+    <div>
+      <ul data-breakpoint="800" class="flexnav">
+        <li class="menu_rh"><a href="index.html">home</a></li>
+        <li><a href="about_us.html">about</a></li>
+        <li><a href="#">services</a>
+          <ul>
+            <li><a href="/services/interior_redesign.html">vacant home staging</a></li>
+            <li><a href="/services/home_staging.html">occupied home staging</a></li>
+            <li><a href="/services/color_consultation.html">staging consultation</a></li>
+          </ul>
+        </li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="contact_us.html">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<script>
+  function GetDateTime() {
+    var weekdays = [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday'
+    ]
+    var month = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December'
+    ]
+
+    var current_date = new Date()
+    var weekday_value = current_date.getDay()
+    var month_value = current_date.getMonth()
+
+    var dateString = weekdays[weekday_value] + '  ' + current_date.getDate() + ' ' + month[month_value] + ' ' + current_date.getFullYear()
+    document.getElementById('lbltxt').innerHTML = dateString
+  }
+  GetDateTime()
+
+  // Used for navbar
+  $('.flexnav').flexNav();
+</script>
