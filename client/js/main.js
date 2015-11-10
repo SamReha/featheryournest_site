@@ -2,6 +2,8 @@
 jQuery(document).ready(function() {
   loadHead()
   loadHeader()
+  loadFooter()
+  
   var offset = 220;
   var duration = 500;
 
@@ -35,6 +37,10 @@ function loadHead() {
 
 function loadHeader() {
   $('#header').load('/components/header.html')
+}
+
+function loadFooter() {
+  $('#footer').load('/components/footer.html')
 }
 
 /* REALLY not sure what all this is for. Apparently some JS form that doesn't exist anymore?
