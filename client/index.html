@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <link href="/css/config.css" rel="stylesheet" type="text/css" />
-  <head id="head"></head>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Feather Your Nest Staging</title>
+    <link href="/css/config.css" rel="stylesheet" type="text/css"/>
+  </head>
 
   <body>
     <div id="wrap">
@@ -10,7 +15,7 @@
         <header id="header"></header>
         <div class="clear"></div>
 
-        <!--************************* Begin Content ****************************-->
+        <!-- CONTENT -->
         <section id="content">
           <div class="container margin_bottom">
             <div class="banner">
@@ -18,22 +23,22 @@
                 <figure class="banner_img">
                   <div class="flexslider">
                     <ul class="slides">
-                      <li><img src="images_feather/banner/banner_2.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_3.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_4.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_5.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_6.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_7.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_8.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_9.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_10.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_11.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_12.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_13.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_14.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_15.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_16.jpg" alt="Banner"></li>
-                      <li><img src="images_feather/banner/banner_17.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_2.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_3.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_4.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_5.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_6.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_7.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_8.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_9.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_10.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_11.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_12.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_13.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_14.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_15.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_16.jpg" alt="Banner"></li>
+                      <li><img src = "/images_feather/banner/banner_17.jpg" alt="Banner"></li>
                     </ul>
                   </div>
                 </figure>
@@ -58,7 +63,7 @@
               <div class="padd bg">
                 <h2><strong>Feather Your Nest Staging</strong> <span></span></h2>
                   <figure class="img_left">
-                    <img src="images_feather/danube_MBR.JPG">
+                    <img src = "/images_feather/danube_MBR.JPG">
                   </figure>
 
                   <p><strong class="color_cyan">Feather Your Nest</strong> supplies a complete range of real estate staging services, from staging consultations, occupied home stagings, and vacant home stagings. We provide all the furniture, art, accessories, lighting, linens, and other essential items to turn your listing into a showcase property.</p>
@@ -109,7 +114,6 @@
             </aside>
           </div>
         </section>
-        <!--************************* End Content ****************************-->
 
         <!-- FOOTER -->
         <footer id="footer"></footer>
@@ -120,10 +124,13 @@
 
   <script type = "text/javascript" src = "/js/jquery.min.js"></script>
   <script type = "text/javascript" src = "/js/modernizr.js"></script>
-  <script type = "text/javascript" src = "/js/jquery-1.9.0.min.js"></script>
   <script type = "text/javascript" src = "/js/jquery.easing.1.3.js"></script>
   <script type = "text/javascript" src = "/js/jquery.touchSwipe.min.js"></script>
   <script defer src = "/js/jquery.flexslider.js"></script>
-  <script type = "text/javascript" src = "/js/jquery.flexnav.js"></script>
   <script type = "text/javascript" src = "/js/main.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      loadHeader('navHome')
+    })
+  </script>
 </html>

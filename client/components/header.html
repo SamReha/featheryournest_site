@@ -23,22 +23,21 @@
 
   <div class="menu-button">Menu</div>
   <nav id="nav_bg">
-    <div>
-      <ul data-breakpoint="800" class="flexnav">
-        <li class="menu_rh"><a href="/index.html">home</a></li>
-        <li><a href="/about_us.html">about</a></li>
-        <li><a href="#">services</a>
-          <ul>
-            <li><a href="/services/interior_redesign.html">vacant home staging</a></li>
-            <li><a href="/services/home_staging.html">occupied home staging</a></li>
-            <li><a href="/services/color_consultation.html">staging consultation</a></li>
-          </ul>
-        </li>
-        <li><a href="/gallery.html">gallery</a></li>
-      </ul>
-    </div>
+    <ul class = "flexnav" data-breakpoint = "800">
+      <li id = "navHome"><a href = "/index.html">home</a></li>
+      <li id = "navAbout"><a href = "/about_us.html">about</a></li>
+      <li id = "navServices"><a href = "#">services</a>
+        <ul>
+          <li><a href = "/services/interior_redesign.html">vacant home staging</a></li>
+          <li><a href = "/services/home_staging.html">occupied home staging</a></li>
+          <li><a href = "/services/color_consultation.html">staging consultation</a></li>
+        </ul>
+      </li>
+      <li id = "navGallery"><a href = "/gallery.html">gallery</a></li>
+    </ul>
   </nav>
 </div>
+<script type = "text/javascript" src = "/js/jquery.flexnav.js"></script>
 <script>
   function GetDateTime() {
     var weekdays = [

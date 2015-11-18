@@ -1,9 +1,7 @@
 'use strict'
 jQuery(document).ready(function() {
-  loadHead()
-  loadHeader()
   loadFooter()
-  
+
   var offset = 220;
   var duration = 500;
 
@@ -31,12 +29,10 @@ $(window).load(function() {
   })
 });
 
-function loadHead() {
-  $('#head').load('/components/head.html')
-}
-
-function loadHeader() {
-  $('#header').load('/components/header.html')
+function loadHeader(navElementID) {
+  $('#header').load('/components/header.html', function(){
+    $('#' + navElementID).addClass('menu_rh') // Makes sure the nav bar highlighting gets set
+  })
 }
 
 function loadFooter() {
