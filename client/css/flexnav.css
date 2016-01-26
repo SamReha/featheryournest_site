@@ -167,7 +167,7 @@ nav {
     padding: 00px 00px 00px 00px;
     float: right;
     z-index: 101;
-    background: #5c2901;
+    background: #e37b00;
   }
 
   .flexnav.opacity {
@@ -230,7 +230,7 @@ nav {
   }
 
   .flexnav li a:hover, .flexnav li a:active, .flexnav li.menu_rh a {
-    color: #e37b00 !important;
+    color: #5c2901 !important;
     background: none;
     text-shadow: 00px 00px 00px;
   }
