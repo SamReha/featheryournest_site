@@ -380,7 +380,7 @@
 
 /*************** Footer ***************/
 #footer {
-  background: url(../images_feather/bottom.png) left top scroll repeat;
+  /*background: url(../images_feather/bottom.png) left top scroll repeat;*/
   padding: 20px 00px 00px 00px;
   margin-top: 15px;
 }
@@ -461,18 +461,19 @@
 }
 
 #footer .bottom_bg {
-  background: #313337;
+  /*background: #313337;*/
   padding: 15px 00px;
   float: left;
   width: 100%;
-  border-top: 4px solid #2c2e31;
+  /*border-top: 4px solid #2c2e31;*/
   color: #F4F4F4;
 }
 
 #footer .bottom_bg p {
   padding: 00px;
-  color: #FFFFFF !important;
-  text-shadow: 00px 01px 01px #333333;
+  /*color: #FFFFFF !important;*/
+  color: #5C2901 !important;
+  /*text-shadow: 00px 01px 01px #333333;*/
 }
 
 #footer .bottom_bg A {
