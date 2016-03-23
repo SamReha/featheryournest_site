@@ -392,7 +392,7 @@
 }
 #footer p {
   color: #A2BD1C !important;
-  text-shadow: 00px 01px 01px #474c2d;
+  /*text-shadow: 00px 01px 01px #474c2d;*/
 }
 
 #footer aside A {
